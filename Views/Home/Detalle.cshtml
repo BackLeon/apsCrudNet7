@@ -1,0 +1,30 @@
+@model AplicacionCrud.Models.Domain.Contacto
+
+@{
+    ViewData["Title"] = "Detalle contacto";
+}
+
+<h1 class="text-center" style="color: #dee2e6;">Contacto con .NET 7 (.NET Core MVC)</h1>
+
+
+<div class="row">
+    <div class="offset-12">
+        <div class="card" style="border-radius: .5rem; border: 0px solid; background-color: #2b3035;">
+            <div class="card-header" style="background-color: #712cf9;">
+                <h3 class="text-white"><strong>Detalle de Usuario</strong></h3>
+            </div>
+            <div class="card-body">
+
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Nombre: </strong>@Html.DisplayFor(m => m.Nombre)</li>
+                    <li class="list-group-item"><strong>Teléfono: </strong>@Html.DisplayFor(m => m.Telefono)</li>
+                    <li class="list-group-item"><strong>Celular: </strong>@Html.DisplayFor(m => m.Celular)</li>
+                </ul>
+
+                <a asp-controller="Home" asp-action="Index">Volver</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
